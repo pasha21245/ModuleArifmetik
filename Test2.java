@@ -11,8 +11,15 @@ public class Test2 {
         int b = sc.nextInt();
         int number = sc.nextInt();
 
-        double c = Math.pow(a, b) % Math.abs(number);
-        System.out.println(c);
+        System.out.println(deleniePoModulyu(a, b, number));
+    }
+
+    public static double deleniePoModulyu(int value, int stepen, int chislo) {
+        double c = 0;
+        if (value >= 0 && stepen >= 0) {
+            c = Math.pow(value, stepen) % Math.abs(chislo);
+        }
+        return c;
     }
 }
 
