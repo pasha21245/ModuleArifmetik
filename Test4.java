@@ -16,7 +16,7 @@ public class Test4 {
     public static void randomChislo(int min, int max, int m) {
         int i, flag = 0;
         int d = (int) ((Math.random() * (max - min)) + min);
-        if (d == 0 || d == 1 || d <= 0) {
+        if (d == 0 || d == 1 || d <= 0 && m <= 1) {
             System.out.println(d + " не является простым числом");
         } else {
             for (i = 2; i <= m; i++) {
@@ -27,7 +27,7 @@ public class Test4 {
                 }
             }
             if (flag == 0) {
-                System.out.println(d + " простое числом");
+                System.out.println(d + " простое число");
             }
         }
     }
