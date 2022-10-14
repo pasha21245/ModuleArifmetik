@@ -17,17 +17,17 @@ public class Test4 {
         int i, flag = 0;
         int d = (int) ((Math.random() * (max - min)) + min);
         if (d == 0 || d == 1 || d <= 0 && m <= 1) {
-            System.out.println(d + " ne yavlaetsa prostim chislom");
+            System.out.println(d + " :ne yavlaetsa prostim chislom");
         } else {
             for (i = 2; i <= m; i++) {
                 if (d % i == 0) {
-                    System.out.println(d + " ne yavlaetsa prostim chislom");
+                    System.out.println(d + " :ne yavlaetsa prostim chislom");
                     flag = 1;
                     break;
                 }
             }
             if (flag == 0) {
-                System.out.println(d + " prostoe chislo");
+                System.out.println(d + " :prostoe chislo");
             }
         }
     }
